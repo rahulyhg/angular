@@ -1,0 +1,209 @@
+<div id="content" class="row">
+<div class="small-11 small-centered large-centered columns">
+<div class="row">
+<div class="large-12 columns">
+<div class="large-12 columns">
+<div class="row">
+    <div class="large-12 columns">
+        <div class="right">
+            <a href="#/innerPage">Go back</a>
+        </div>
+    </div>
+</div>
+<div data-ng-init="getProfile()">
+<div class="row">
+    <div class="large-2 columns">
+
+        <img ng-src="images/{{userProfiles['photo_name']}}" height="100" width="100" alt="photo comes here"/>
+    </div>
+    <div class="large-10 columns">
+        <div class="row">
+            <div class="large-4 columns"><span class="strong">Gender:</span>{{userProfiles['gender']}}
+            </div>
+            <div class="large-4 columns"><span class="strong">Date Of Birth:</span>
+                {{userProfiles['date_of_birth']}}
+            </div>
+            <div class=" right large-4 columns"><span class="strong">Height/weight:</span>
+                {{userProfiles['height']}}/{{userProfiles['weight']}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-4 columns"><span class="strong">Current City:</span>
+                {{userProfiles['city']}}
+            </div>
+            <div class="large-4 columns"><span class="strong">Native:</span>
+                {{userProfiles['native']}}
+            </div>
+            <div class=" right large-4 columns"><span class="strong">Moshal:</span>
+                {{userProfiles['moshal']}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-4 columns"><span class="strong">Education Level:</span>
+                {{userProfiles['highest_education']}}
+            </div>
+            <div class="large-4 columns end"><span class="strong">Education:</span>
+                {{userProfiles['education_qualification']}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns"><span class="strong">Occupation:</span>
+                {{userProfiles['current_occupation']}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <div class="banner">
+            Additional Basic Details
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="large-12 columns">
+        <span class="strong">About your self:</span> {{userProfiles['about_yourself']}}
+    </div>
+</div>
+<div class="row">
+    <div class="large-12 columns"><span class="strong">Hobbies:</span>
+        {{userProfiles['hobbies']}}
+    </div>
+</div>
+<div class="row">
+    <div class="large-12 columns">
+        <span class="strong">About Preferred Life partner:</span>
+        {{userProfiles['about_life_partner']}}
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="large-12 columns">
+        <div class="banner">
+            Family Details
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-6 columns"><span class="strong">Father Name:</span>
+        {{userProfiles['father_name']}}
+    </div>
+    <div class="large-6 columns"><span class="strong">Mother Name:</span>
+        {{userProfiles['mother_name']}}
+    </div>
+</div>
+<div class="row">
+    <div class="large-6 columns"><span class="strong">Father's Education:</span>
+        {{userProfiles['father_qualification']}}
+    </div>
+    <div class="large-6 columns"><span class="strong">Mother's Education:</span>
+        {{userProfiles['mother_qualification']}}
+    </div>
+</div>
+<div class="row">
+    <div class="large-6 columns"><span class="strong">Father's Occupation:</span>
+        {{userProfiles['father_occupation']}}
+    </div>
+    <div class="large-6 columns"><span class="strong">Mother's Occupation:</span>
+        {{userProfiles['mother_occupation']}}
+    </div>
+</div>
+<div class="row">
+    <div class="large-6 columns">
+        <span class="strong">Brothers:</span> Unmarried-{{userProfiles['unmarried_brothers']}}
+        Married-{{userProfiles['married_brothers']}}
+    </div>
+    <div class="large-6 columns">
+        <span class="strong">Sisters:</span> Unmarried-{{userProfiles['unmarried_sisters']}}
+        Married-{{userProfiles['married_sisters']}}
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <div class="banner">
+            Contact Details
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-2 columns"><span class="strong">Address Details:</span></div>
+    <div class="large-10 columns">
+        {{userProfiles['address_line1']}},<br>
+        {{userProfiles['area']}}, {{userProfiles['city']}} {{userProfiles['pincode']}},<br>
+        {{userProfiles['state']}},India.
+    </div>
+</div>
+<div class="row">
+    <div class="large-2 columns">
+        <span class="strong">Home No:</span>
+    </div>
+    <div class="large-10 columns">{{userProfiles['contact_resident_no']}}</div>
+</div>
+<div class="row">
+    <div class="large-2 columns">
+        <span class="strong">Mobile No:</span>
+    </div>
+    <div class="large-10 columns">
+        {{userProfiles['contact_mobile_no']}}
+    </div>
+</div>
+<div class="row">
+    <div class="large-2 columns">
+        <span class="strong">Email Id:</span>
+    </div>
+    <div class="large-10 columns">
+        {{userProfiles['email_id']}}
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <div class="banner">
+            Reference Details
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-6 columns"><span
+            class="strong">{{userProfiles['relative1_relationship']}}</span></div>
+    <div class="large-6 columns"><span
+            class="strong">{{userProfiles['relative2_relationship']}}</span></div>
+</div>
+<div class="row">
+    <div class="large-6 columns"><span class="strong">Name:</span>
+        {{userProfiles['relative1_name']}}
+    </div>
+    <div class="large-6 columns"><span class="strong">Name:</span>
+        {{userProfiles['relative2_name']}}
+    </div>
+</div>
+<div class="row">
+    <div class="large-6 columns"><span class="strong">City:</span>
+        {{userProfiles['relative1_city']}}
+    </div>
+    <div class="large-6 columns"><span class="strong">City:</span>
+        {{userProfiles['relative2_city']}}
+    </div>
+</div>
+<div class="row">
+    <div class="large-6 columns"><span class="strong">Contact No:</span>
+        {{userProfiles['relative1_contact_no']}}
+    </div>
+    <div class="large-6 columns"><span class="strong">Contact No:</span>
+        {{userProfiles['relative2_contact_no']}}
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

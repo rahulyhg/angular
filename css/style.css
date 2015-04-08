@@ -1,0 +1,161 @@
+/*
+ http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: vollkornregular arial !important;
+    vertical-align: baseline;
+}
+ /*HTML5 display-role reset for older browsers*/
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#website, #registration{
+    /*border: 2px solid #000000;*/
+    margin: 10px;
+}
+
+ #logo_pic{
+     background: url("../images/ganesha.jpg") no-repeat;
+     background-size: 50px 50px;
+     min-height:50px;
+     height:auto !important;
+}
+.th-item{
+    height: 5em;
+    width: 5em;
+    overflow: hidden;
+    background-position: center;
+}
+
+.contact_us{
+    padding-top: 7px ;
+}
+
+.test{
+    border: 2px solid blue;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+ input[type=number]::-webkit-outer-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+ }
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.fieldValid {
+    border: 1px solid #00ff00;
+}
+.fieldInvalid {
+    border: 1px solid #ff0000;
+}
+
+
+.has-error{
+        color: #ff0000;
+    }
+
+input.error { border: 1px solid #f00; }
+/*
+input[type="text"] { border: 1px solid #d66 }*/
+
+.banner{
+    background: #333;
+    color:white;
+    font-family: vollkornitalic, Arial !important;
+    line-height: 40px;
+    padding-left: 10px;
+
+}
+
+.individual{
+    background: #333;
+    color:white;
+    font-family: vollkornregular, Arial !important;
+    font-size: 15px;
+    line-height: 40px;
+    padding-left: 10px;
+
+}
+
+.strong{
+     font-weight: bolder; 
+}
+
+.text_fonts{
+    font-family: vollkornregular, Arial !important;
+}
+
+.menu_fonts{
+    font-family: vollkornbold, Arial !important;
+    font-size: larger;
+
+}
+
+.bold_fonts{
+    font-family: vollkornbold, Arial !important;
+
+}
+    
+body{
+    font-family: vollkornregular, Arial !important;
+}
+
+div{
+    margin-bottom: 10px;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

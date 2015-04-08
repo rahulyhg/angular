@@ -1,0 +1,56 @@
+<div id="content" class="row">
+    <div class="small-11 small-centered columns">
+        <div class="row">
+            <div class="large-12 columns" >
+                <div class="large-8 columns">
+                    <img  class="contain-to-grid radius" src="images/weddingpic.jpg"  alt="wedding picture goes here"/>
+                </div>
+                <div class="large-4 columns"  login-directive>
+                    <div class="panel radius">
+                        <form name="myformNg">
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <h2>Sign in to access</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label>Username
+                                        <input ng-class="{'error' : myformNg.username.$invalid && !myformNg.username.$pristine }" type="text" ng-model="user.name" name="username" placeholder="Enter Username"  required/>
+                                        <p ng-class="{ 'has-error' : myformNg.username.$invalid && !myformNg.username.$pristine }"  ng-show="myformNg.username.$invalid && !myformNg.username.$pristine">Your username is Required</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label>Password
+                                        <input ng-class="{'error' : myformNg.password.$invalid && !myformNg.password.$pristine }" type="text" ng-model="user.password" name="password" placeholder="Enter Password"  required/>
+                                        <p ng-class="{ 'has-error' : myformNg.password.$invalid && !myformNg.password.$pristine }"  ng-show="myformNg.password.$invalid && !myformNg.password.$pristine">Password is Required</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <button type="submit" class="button tiny radius" ng-disabled="myformNg.$invalid" ng-click="login(user)">Login</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <a href="#" class="">I can not access my account.</a>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <a href="#/registration" class="button tiny radius">Create New account</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br/>
+    </div>
+</div>

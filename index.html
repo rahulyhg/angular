@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html ng-app="myapp" class="no-js" lang="en" >
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patel Mandal</title>
+
+    <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- If you are using the gem version, you need this only -->
+
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/angular-file-upload-shim.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src="js/vendor/angular-file-upload.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.0rc3/angular-route.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.0rc3/angular-resource.min.js">
+    </script>
+    <!--<script src="js/angular.min.js"></script>-->
+    <script src="js/vendor/dirPagination.js"></script>
+    <script src="js/app.js"></script>
+
+
+
+  <script src="js/controllers/loginCtrl.js"></script>
+  <script src="js/controllers/homeCtrl.js"></script>
+  <script src="js/controllers/registerCtrl.js"></script>
+   <script src="js/controllers/innerCtrl.js"></script>
+    <script src="js/controllers/viewCtrl.js"></script>
+  <script src="js/services/loginService.js"></script>
+  <script src="js/services/sessionService.js"></script>
+  <script src="js/services/registerService.js"></script>
+  <script src="js/services/innerService.js"></script>
+    <script src="js/services/shareService.js"></script>
+
+
+
+</head>
+<body> <!--onkeydown="return (event.keyCode != 116)"-->
+   <div id="website">
+       <div  id="header" class="row">
+           <div class="small-11 small-centered columns">
+               <div class="row">
+                   <div class="large-12 columns" data-equalizer>
+                       <div class="small-6 large-6 columns" data-equalizer-watch>
+                           <p id="logo_pic"></p>
+                       </div>
+
+                       <div class="small-6 large-6 columns contact_us" data-equalizer-watch>
+                           <p class="text-right">contact us</p>
+                           <p class="text-right">9904618</p>
+                       </div>
+                   </div>
+               </div>
+               <br/>
+               <div class="row">
+                   <div class="large-12 columns">
+                       <div class="large-12 columns ">
+                           <div class="contain-to-grid">
+                               <nav class="top-bar" data-topbar>
+                                   <ul class="title-area">
+                                       <li class="name">
+                                       </li>
+                                       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                                       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                                   </ul>
+
+                                   <section class="top-bar-section">
+                                       <!-- Right Nav Section -->
+                                       <!--<ul class="right">
+                                           <li class="active"><a href="#">Right Button Active</a></li>
+                                           <li class="has-dropdown">
+                                               <a href="#">Right Button Dropdown</a>
+                                               <ul class="dropdown">
+                                                   <li><a href="#">First link in dropdown</a></li>
+                                               </ul>
+                                           </li>
+                                       </ul>-->
+
+                                       <!-- Left Nav Section -->
+                                       <ul class="left">
+                                           <li><a href="#/"><span class="menu_fonts">Home</span></a></li>
+                                           <li><a href="#"><span class="menu_fonts">About Us</span></a></li>
+                                           <li><a href="#/registration"><span class="menu_fonts">Registration</span></a></li>
+                                       </ul>
+                                   </section>
+                               </nav>
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <br>
+
+       <div data-ng-view></div>
+
+
+       <div id="footer" class="row">
+           <div class="small-11 small-centered columns">
+               <div class="row">
+                   <div class="large-12 columns">
+                       <div class="large-12 columns">
+                           <hr/>
+                       </div>
+
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="large-12 columns">
+                       <div class="large-12 columns">
+                           <p class="text-center">Copyright © 2014. All rights reserved.</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+
+
+<!-- body content here -->
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

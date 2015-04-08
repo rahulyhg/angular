@@ -1,0 +1,401 @@
+<div id="content" class="row">
+<div class="small-11 small-centered large-centered columns">
+<div class="row">
+<div class="large-12 columns">
+<div class="large-12 columns">
+
+<form name="myformNg" novalidate>
+
+<div class="row">
+    <div class="large-4 columns" >
+        <label>First Name
+            <input ng-class="{ 'error' : myformNg.first_name.$invalid && !myformNg.first_name.$pristine }" type="text" ng-model="myform.first_name" name="first_name" ng-minlength=3 ng-maxlength=50 placeholder="Enter Your First Name"  required/>
+            <p ng-class="{ 'has-error' : myformNg.first_name.$invalid && !myformNg.first_name.$pristine }"  ng-show="myformNg.first_name.$invalid && !myformNg.first_name.$pristine">Your first name is required</p>
+        </label>
+    </div>
+    <div class="large-4 columns">
+        <label>Middle Name
+            <input ng-class="{ 'error' : myformNg.middle_name.$invalid && !myformNg.middle_name.$pristine }" type="text" ng-model="myform.middle_name" name="middle_name" ng-minlength=3 ng-maxlength=50 placeholder="Enter Your Middle Name"  required/>
+            <p ng-class="{'has-error' : myformNg.middle_name.$invalid && !myformNg.middle_name.$pristine }"  ng-show="myformNg.middle_name.$invalid && !myformNg.middle_name.$pristine">Your middle name is Required</p>
+        </label>
+    </div>
+    <div class="large-4 columns">
+        <div class="row collapse">
+            <label>Last Name
+                <input ng-class="{'error' : myformNg.last_name.$invalid && !myformNg.last_name.$pristine }" type="text" ng-model="myform.last_name" name="last_name"  ng-minlength=3 ng-maxlength=50 placeholder="Enter Your Last Name"  required/>
+                <p ng-class="{ 'has-error' : myformNg.last_name.$invalid && !myformNg.last_name.$pristine }"  ng-show="myformNg.last_name.$invalid && !myformNg.last_name.$pristine">Your last name is Required</p>
+            </label>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="large-4 columns">
+        <label>Gender</label>
+        <input type="radio"  ng-model="myform.gender" name="gender" value="male" id="male"  checked required><label for="male">Male</label>
+        <input type="radio" ng-model="myform.gender" value="female" id="female"><label for="female">Female</label>
+    </div>
+    <div class="large-4 columns">
+        <label>NRI Status</label>
+        <input type="radio" ng-model="myform.nri_status" value="nri" id="nri" checked  required><label for="nri">NRI</label>
+        <input type="radio" ng-model="myform.nri_status" value="non-nri" id="non-nri"><label
+            for="non-nri">NON-NRI</label>
+    </div>
+    <div class="large-4 columns">
+        <label>Profile Created By</label>
+        <input type="radio" ng-model="myform.profile_creator" value="self" id="self" checked required><label for="self">Self</label>
+        <input type="radio" ng-model="myform.profile_creator" value="parent or other relative" id="por"><label
+            for="por">Parent or Other relative </label>
+    </div>
+</div>
+<div class="row">
+    <div class="large-4 columns">
+        <label>Username
+            <input ng-class="{'error' : myformNg.username.$invalid && !myformNg.username.$pristine }" type="text" ng-model="myform.username" name="username" placeholder="Enter Username"  required/>
+            <p ng-class="{ 'has-error' : myformNg.username.$invalid && !myformNg.username.$pristine }"  ng-show="myformNg.username.$invalid && !myformNg.username.$pristine">Your username is Required</p>
+        </label>
+    </div>
+    <div class="large-4 columns">
+        <label>Password
+            <input ng-class="{'error' : myformNg.password.$invalid && !myformNg.password.$pristine }" type="text" ng-model="myform.password" name="password" placeholder="Enter Password"  required/>
+            <p ng-class="{ 'has-error' : myformNg.password.$invalid && !myformNg.password.$pristine }"  ng-show="myformNg.password.$invalid && !myformNg.password.$pristine">Password is Required</p>
+        </label>
+    </div>
+    <div class="large-4 columns">
+        <label>Email Id
+            <input ng-class="{ 'error' : myformNg.email.$invalid && !myformNg.email.$pristine }" type="email" ng-model="myform.email_id" name="email" placeholder="Enter Your Email Id"  required />
+            <p ng-class="{ 'has-error' : myformNg.email.$invalid && !myformNg.email.$pristine }"  ng-show="myformNg.email.$invalid && !myformNg.email.$pristine">Your email Id is Required</p>
+        </label>
+    </div>
+
+</div>
+<div class="row">
+    <div class="large-4 columns">
+        <label>Address Line1
+            <input ng-class="{ 'error' : myformNg.address_line1.$invalid && !myformNg.address_line1.$pristine }" type="text" ng-model="myform.address_line1" name="address_line1" placeholder=""  required/>
+            <p ng-class="{ 'has-error' : myformNg.address_line1.$invalid && !myformNg.address_line1.$pristine }"  ng-show="myformNg.address_line1.$invalid && !myformNg.address_line1.$pristine">your address is Required</p>
+        </label>
+    </div>
+    <div class="large-2 columns">
+        <label>Area
+            <input ng-class="{'error' : myformNg.area.$invalid && !myformNg.area.$pristine }" type="text" ng-model="myform.area" name="area" placeholder="Enter area"  required/>
+            <p ng-class="{ 'has-error' : myformNg.area.$invalid && !myformNg.area.$pristine }"  ng-show="myformNg.area.$invalid && !myformNg.area.$pristine">Your area is Required</p>
+        </label>
+    </div>
+    <div class="large-2 columns">
+        <label>City
+            <input ng-class="{'error' : myformNg.city.$invalid && !myformNg.city.$pristine }" type="text" ng-model="myform.city" name="city" placeholder="Enter city"  required/>
+            <p ng-class="{ 'has-error' : myformNg.city.$invalid && !myformNg.city.$pristine }"  ng-show="myformNg.city.$invalid && !myformNg.city.$pristine">Your city is Required</p>
+        </label>
+    </div>
+    <div class="large-2 columns">
+        <label>State
+            <input ng-class="{'error' : myformNg.state.$invalid && !myformNg.state.$pristine }" type="text" ng-model="myform.state" name="state" placeholder="Enter state"  required/>
+            <p ng-class="{ 'has-error' : myformNg.state.$invalid && !myformNg.state.$pristine }"  ng-show="myformNg.state.$invalid && !myformNg.state.$pristine">Your state is Required</p>
+        </label>
+    </div>
+    <div class="large-2 columns">
+        <label>Pincode
+            <input ng-class="{'error' : myformNg.pincode.$invalid && !myformNg.pincode.$pristine }" type="number" ng-model="myform.pincode"  name="pincode" placeholder="pincode"  required/>
+            <p ng-class="{ 'has-error' : myformNg.pincode.$invalid && !myformNg.pincode.$pristine }"  ng-show="myformNg.pincode.$invalid && !myformNg.pincode.$pristine">Pincode is a number</p>
+        </label>
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="large-6 columns">
+        <label>Contact No(R)
+            <input ng-class="{ 'error' : myformNg.contact_no_r.$invalid && !myformNg.contact_no_r.$pristine }"  type="number" ng-model="myform.contact_no_r" name="contact_no_r" placeholder="Enter Residential Contact No">
+            <p ng-class="{ 'has-error' : myformNg.contact_no_r.$invalid && !myformNg.contact_no_r.$pristine }"  ng-show="myformNg.contact_no_r.$invalid && !myformNg.contact_no_r.$pristine">Enter contact Number</p>
+        </label>
+    </div>
+    <div class="large-6 columns">
+        <label>Contact No(M)
+            <input ng-class="{ 'error' : myformNg.contact_no_m.$invalid && !myformNg.contact_no_m.$pristine }" type="number" ng-model="myform.contact_no_m" name="contact_no_m" placeholder="Enter Mobile Contact No" required>
+            <p ng-class="{ 'has-error' : myformNg.contact_no_m.$invalid && !myformNg.contact_no_m.$pristine }"  ng-show="myformNg.contact_no_m.$invalid && !myformNg.contact_no_m.$pristine">Mobile Number is Required</p>
+        </label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <label>About Yourself
+            <textarea  ng-model="myform.yourself" name="yourself" value="" placeholder="Tell Us about your self"></textarea>
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="large-2 columns">
+        <label>Native
+            <input ng-class="{ 'error' : myformNg.native.$invalid && !myformNg.native.$pristine }" type="text" ng-model="myform.native" name="native" placeholder="Father's Native"  required>
+            <p ng-class="{ 'has-error' : myformNg.native.$invalid && !myformNg.native.$pristine }"  ng-show="myformNg.native.$invalid && !myformNg.native.$pristine">Your native is Required</p>
+        </label>
+    </div>
+    <div class="large-2 columns">
+        <label>Moshal
+            <input ng-class="{ 'error' : myformNg.moshal.$invalid && !myformNg.moshal.$pristine }" type="text" ng-model="myform.moshal" name="moshal" placeholder="Mother's Native"  required>
+            <p ng-class="{ 'has-error' : myformNg.moshal.$invalid && !myformNg.moshal.$pristine }"  ng-show="myformNg.moshal.$invalid && !myformNg.moshal.$pristine">Your moshal is Required</p>
+        </label>
+    </div>
+    <div class="large-2 columns">
+        <label>Birth Place
+            <input type="text" ng-model="myform.birth_place" name="birth_place" placeholder="Birth Place">
+        </label>
+    </div>
+
+    <div class="large-2 columns">
+        <label>Date Of Birth
+            <input  ng-class="{ 'error' : myformNg.dob.$invalid && !myformNg.dob.$pristine }" type="date" ng-model="myform.dob" name="dob" placeholder="yyyy-MM-dd"  required>
+            <p ng-class="{ 'has-error' : myformNg.dob.$invalid && !myformNg.dob.$pristine }"  ng-show="myformNg.dob.$invalid && !myformNg.dob.$pristine">your date of birth is Required</p>
+        </label>
+    </div>
+    <div class="large-2 columns">
+        <label>Height
+            <select ng-model="myform.height" name="height"  required>
+                <option value="4.4" selected>4ft 4in</option>
+                <option value="4.5" selected>4ft 5in</option>
+                <option value="4.6" selected>4ft 6in</option>
+                <option value="4.7" selected>4ft 7in</option>
+                <option value="4.8" selected>4ft 8in</option>
+                <option value="4.9" selected>4ft 9in</option>
+                <option value="4.10" selected>4ft 10in</option>
+                <option value="4.11" selected>4ft 11in</option>
+                <option value="5.0" selected>5ft</option>
+                <option value="5.1" selected>5ft 1in</option>
+                <option value="5.2" selected>5ft 2in</option>
+                <option value="5.3" selected>5ft 3in</option>
+                <option value="5.4" selected>5ft 4in</option>
+                <option value="5.5" selected>5ft 5in</option>
+                <option value="5.6" selected>5ft 6in</option>
+                <option value="5.7" selected>5ft 7in</option>
+                <option value="5.8" selected>5ft 8in</option>
+                <option value="5.9" selected>5ft 9in</option>
+                <option value="5.10" selected>5ft 10in</option>
+                <option value="5.11" selected>5ft 11in</option>
+                <option value="6.0" selected>6ft</option>
+                <option value="6.1" selected>6ft 1in</option>
+                <option value="6.2" selected>6ft 2in</option>
+                <option value="6.3" selected>6ft 3in</option>
+                <option value="6.4" selected>6ft 4in</option>
+                <option value="6.5" selected>6ft 5in</option>
+                <option value="6.6" selected>6ft 6in</option>
+                <option value="6.7" selected>6ft 7in</option>
+                <option value="6.8" selected>6ft 8in</option>
+                <option value="6.9" selected>6ft 9in</option>
+                <option value="6.10" selected>6ft 10in</option>
+                <option value="6.11" selected>6ft 11in</option>
+                <option value="7.0" selected>7ft</option>
+                <option value="7.0+" selected>7ft+</option>
+            </select>
+        </label>
+    </div>
+    <div class="large-2 columns">
+        <div class="row collapse">
+            <label>Weight </label>
+
+            <div class="large-6 columns">
+                <input ng-class="{ 'error' : myformNg.weight.$invalid && !myformNg.weight.$pristine }" type="number" ng-model="myform.weight" name="weight" placeholder=""  required>
+                <p ng-class="{ 'has-error' : myformNg.weight.$invalid && !myformNg.weight.$pristine }"  ng-show="myformNg.weight.$invalid && !myformNg.weight.$pristine">Required</p>
+            </div>
+            <div class="large-6 columns">
+                <span class="postfix">Kgs</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="large-4 columns">
+        <label>Highest Educaiton
+            <select ng-model="myform.education_level"  name="education_level" required>
+                <option value="husker" selected>Under Graduate</option>
+                <option value="starbuck">Graduate</option>
+                <option value="hotdog">Post Graduate</option>
+                <option value="apollo">Ph.D</option>
+            </select>
+        </label>
+    </div>
+    <div class="large-4 columns">
+        <label>Education Qualification
+            <input ng-class="{ 'error' : myformNg.education.$invalid && !myformNg.education.$pristine }" type="text" ng-model="myform.education" name="education" placeholder="Enter Course Name"  required/>
+            <p ng-class="{ 'has-error' : myformNg.education.$invalid && !myformNg.education.$pristine }"  ng-show="myformNg.education.$invalid && !myformNg.education.$pristine">Required</p>
+        </label>
+    </div>
+    <div class="large-4 columns">
+        <label>Current Occupation
+            <input type="text" ng-model="myform.occupation" name="occupation" placeholder=""/>
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="large-6 columns">
+        <label>Hobbies
+            <textarea ng-model="myform.hobbies" name="hobbies" placeholder="Personal Interests and Hobbies.."></textarea>
+        </label>
+    </div>
+    <div class="large-6 columns">
+        <label>About Preferred Life Partner
+            <textarea ng-model="myform.partner" name="partner" placeholder="Expected Qualities.."></textarea>
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="large-4 columns">
+        <label>Father's Name
+            <input ng-class="{ 'error' : myformNg.name_of_father.$invalid && !myformNg.name_of_father.$pristine }" type="text" ng-model="myform.name_of_father" name="name_of_father" placeholder="Father's Full Name"  required/>
+            <p ng-class="{ 'has-error' : myformNg.name_of_father.$invalid && !myformNg.name_of_father.$pristine }"  ng-show="myformNg.name_of_father.$invalid && !myformNg.name_of_father.$pristine">Required</p>
+        </label>
+    </div>
+    <div class="large-4 columns">
+        <label>Father's Qualification
+            <input ng-class="{ 'error' : myformNg.qualification_of_father.$invalid && !myformNg.qualification_of_father.$pristine }" type="text" ng-model="myform.qualification_of_father" name="qualification_of_father" placeholder="Father's Qualification"  required/>
+            <p ng-class="{ 'has-error' : myformNg.qualification_of_father.$invalid && !myformNg.qualification_of_father.$pristine }"  ng-show="myformNg.qualification_of_father.$invalid && !myformNg.qualification_of_father.$pristine">Required</p>
+        </label>
+    </div>
+    <div class="large-4 columns">
+        <div class="row collapse">
+            <label>Father's Occupation
+                <input ng-class="{ 'error' : myformNg.occupation_of_father.$invalid && !myformNg.occupation_of_father.$pristine }" type="text" ng-model="myform.occupation_of_father" name="occupation_of_father" placeholder="Father's Occupation"  required/>
+                <p ng-class="{ 'has-error' : myformNg.occupation_of_father.$invalid && !myformNg.occupation_of_father.$pristine }"  ng-show="myformNg.occupation_of_father.$invalid && !myformNg.occupation_of_father.$pristine">Required</p>
+            </label>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="large-4 columns">
+        <label>Mother's Name
+            <input ng-class="{ 'error' : myformNg.name_of_mother.$invalid && !myformNg.name_of_mother.$pristine }" type="text" ng-model="myform.name_of_mother" name="name_of_mother" placeholder="Mother's Full Name"  required/>
+            <p ng-class="{ 'has-error' : myformNg.name_of_mother.$invalid && !myformNg.name_of_mother.$pristine }"  ng-show="myformNg.name_of_mother.$invalid && !myformNg.name_of_mother.$pristine">Required</p>
+        </label>
+    </div>
+    <div class="large-4 columns">
+        <label>Mother's Qualification
+            <input ng-class="{ 'error' : myformNg.qualification_of_mother.$invalid && !myformNg.qualification_of_mother.$pristine }" type="text" ng-model="myform.qualification_of_mother" name="qualification_of_mother" placeholder="Mother's Qualification"  required/>
+            <p ng-class="{ 'has-error' : myformNg.qualification_of_mother.$invalid && !myformNg.qualification_of_mother.$pristine }"  ng-show="myformNg.qualification_of_mother.$invalid && !myformNg.qualification_of_mother.$pristine">Required</p>
+        </label>
+    </div>
+    <div class="large-4 columns">
+        <div class="row collapse">
+            <label>Mother's Occupation
+                <input ng-class="{ 'error' : myformNg.occupation_of_mother.$invalid && !myformNg.occupation_of_mother.$pristine }"  type="text" ng-model="myform.occupation_of_mother" name="occupation_of_mother" placeholder="Mother's Occupation"  required/>
+                <p ng-class="{ 'has-error' : myformNg.occupation_of_mother.$invalid && !myformNg.occupation_of_mother.$pristine }"  ng-show="myformNg.occupation_of_mother.$invalid && !myformNg.occupation_of_mother.$pristine">Required</p>
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-4 columns">
+        <label>Brothers </label>
+        <div class="row">
+            <div class="large-6 columns">
+                <input ng-class="{ 'error' : myformNg.unmarried_brothers.$invalid && !myformNg.unmarried_brothers.$pristine }" type="number" ng-model="myform.unmarried_brothers" name="unmarried_brothers" placeholder="Unamrried"  required />
+                <p ng-class="{ 'has-error' : myformNg.unmarried_brothers.$invalid && !myformNg.unmarried_brothers.$pristine }"  ng-show="myformNg.unmarried_brothers.$invalid && !myformNg.unmarried_brothers.$pristine">Enter a number</p>
+            </div>
+            <div class="large-6 columns">
+                <input ng-class="{ 'error' : myformNg.married_brothers.$invalid && !myformNg.married_brothers.$pristine }" type="number" ng-model="myform.married_brothers" name="married_brothers" placeholder="Married"  required/>
+                <p ng-class="{ 'has-error' : myformNg.married_brothers.$invalid && !myformNg.married_brothers.$pristine }"  ng-show="myformNg.married_brothers.$invalid && !myformNg.married_brothers.$pristine">Enter a number</p>
+            </div>
+        </div>
+    </div>
+    <div class="large-4 columns">
+        <label>Sisters</label>
+        <div class="row">
+            <div class="large-6 columns">
+                <input ng-class="{ 'error' : myformNg.unmarried_sisters.$invalid && !myformNg.unmarried_sisters.$pristine }" type="number" ng-model="myform.unmarried_sisters" name="unmarried_sisters" placeholder="Unamrried"  required/>
+                <p ng-class="{ 'has-error' : myformNg.unmarried_sisters.$invalid && !myformNg.unmarried_sisters.$pristine }"  ng-show="myformNg.unmarried_sisters.$invalid && !myformNg.unmarried_sisters.$pristine">Enter a number</p>
+            </div>
+            <div class="large-6 columns">
+                <input ng-class="{ 'error' : myformNg.married_sisters.$invalid && !myformNg.married_sisters.$pristine }" type="number" ng-model="myform.married_sisters" name="married_sisters" placeholder="Married"  required/>
+                <p ng-class="{ 'has-error' : myformNg.married_sisters.$invalid && !myformNg.married_sisters.$pristine }"  ng-show="myformNg.married_sisters.$invalid && !myformNg.married_sisters.$pristine">Enter a number</p>
+            </div>
+        </div>
+    </div>
+    <div class="large-4 columns"></div>
+</div>
+
+
+<div class="row">
+    <div class="large-3 columns">
+        <label>Relationship
+            <select ng-model="myform.relative1"  required>
+                <option value="husker" selected>kaka</option>
+                <option value="starbuck">Mama</option>
+                <option value="hotdog">Relative</option>
+            </select>
+        </label>
+    </div>
+    <div class="large-3 columns">
+        <label>Name
+            <input ng-class="{'error' : myformNg.relative1_name.$invalid && !myformNg.relative1_name.$pristine }" type="text" ng-model="myform.relative1_name" name="relative1_name" placeholder="Enter First Name"  required />
+            <p ng-class="{ 'has-error' : myformNg.relative1_name.$invalid && !myformNg.relative1_name.$pristine }" ng-show="myformNg.relative1_name.$invalid && !myformNg.relative1_name.$pristine">Required</p>
+        </label>
+    </div>
+    <div class="large-3 columns">
+        <div class="row collapse">
+            <label>City
+                <input ng-class="{'error' : myformNg.relative1_city.$invalid && !myformNg.relative1_city.$pristine }" type="text" ng-model="myform.relative1_city" name="relative1_city" placeholder="Enter City Name"  required />
+                <p ng-class="{ 'has-error' : myformNg.relative1_city.$invalid && !myformNg.relative1_city.$pristine }" ng-show="myformNg.relative1_city.$invalid && !myformNg.relative1_city.$pristine">Required</p>
+            </label>
+        </div>
+    </div>
+    <div class="large-3 columns">
+        <div class="row collapse">
+            <label>Contact No
+                <input ng-class="{'error' : myformNg.relative1_contact_no.$invalid && !myformNg.relative1_contact_no.$pristine }" type="number" ng-model="myform.relative1_contact_no" name="relative1_contact_no" placeholder="Enter Contact No"  required />
+                <p ng- ="{ 'has-error' : myformNg.relative1_contact_no.$invalid && !myformNg.relative1_contact_no.$pristine }" ng-show="myformNg.relative1_contact_no.$invalid && !myformNg.relative1_contact_no.$pristine">Required</p>
+            </label>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="large-3 columns">
+        <label>Relationship
+            <select ng-model="myform.relative2"  required>
+                <option value="husker" selected>kaka</option>
+                <option value="starbuck">Mama</option>
+                <option value="hotdog">Relative</option>
+            </select>
+        </label>
+    </div>
+    <div class="large-3 columns">
+        <label>Name
+            <input ng-class="{'error' : myformNg.relative2_name.$invalid && !myformNg.relative2_name.$pristine }" type="text" ng-model="myform.relative2_name" name="relative2_name" placeholder="Enter First Name"  required />
+            <p ng-class="{ 'has-error' : myformNg.relative2_name.$invalid && !myformNg.relative2_name.$pristine }" ng-show="myformNg.relative2_name.$invalid && !myformNg.relative2_name.$pristine">Required</p>
+        </label>
+    </div>
+    <div class="large-3 columns">
+        <div class="row collapse">
+            <label>City
+                <input ng-class="{'error' : myformNg.relative2_city.$invalid && !myformNg.relative2_city.$pristine }" type="text" ng-model="myform.relative2_city" name="relative2_city" placeholder="Enter City Name"  required />
+                <p ng-class="{ 'has-error' : myformNg.relative2_city.$invalid && !myformNg.relative2_city.$pristine }" ng-show="myformNg.relative2_city.$invalid && !myformNg.relative2_city.$pristine">Required</p>
+            </label>
+        </div>
+    </div>
+    <div class="large-3 columns">
+        <div class="row collapse">
+        <div class="row collapse">
+            <label>Contact No
+                <input ng-class="{'error' : myformNg.relative2_contact_no.$invalid && !myformNg.relative2_contact_no.$pristine }" type="number" ng-model="myform.relative2_contact_no" name="relative2_contact_no" placeholder="Enter Contact No"  required />
+                <p ng-class="{ 'has-error' : myformNg.relative2_contact_no.$invalid && !myformNg.relative2_contact_no.$pristine }" ng-show="myformNg.relative2_contact_no.$invalid && !myformNg.relative2_contact_no.$pristine">Required</p>
+            </label>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="large-12 columns">
+        <input type="file" name="photo_name" id="image_file"  ng-model="myform.photo_name" ng-file-select="onFileSelect($files)" required />
+    </div>
+</div>
+<div class="row">
+    <div class="large-12 columns">
+        <button  ng-click="registerProfile(myform)">Submit Form</button>
+    </div>
+</div>
+</form>
+</div>
+
+</div>
+</div>
+</div>
+</div>
